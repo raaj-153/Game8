@@ -7,8 +7,7 @@ body{
 }
 
 .main{
-     margin-left: 15%;
-     margin-right: 15%;
+     margin: auto;
      color: white;
      font-family:  'Exo', sans-serif;
      width: 70%;
@@ -95,10 +94,12 @@ body{
 
     
     background-color:#7ba334;
+    padding-top: 3px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 3px;
     border-radius: 5px;
+    /* text-align: center; */
     /* color: */
     
 }
@@ -110,6 +111,7 @@ body{
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 3px;
+    padding-top: 3px;
     border-radius: 5px;
     /* color: */
     
@@ -152,7 +154,7 @@ body{
 }
 .p21{
     margin-top: 5%;
-    margin-right:1%;
+    /* margin-right:1%; */
     border-width: 20%;
 
 }
@@ -204,24 +206,15 @@ body{
     
     padding-top: 10%;
     flex-flow: wrap;
+    /* margin-bottom: 30px; */
 }
 
 
-#clip{
-    
-    position: relative;
-    left: 0;
-    z-index: 3;
-    background-color: white;
-    color: #7ba334;
-    font-weight: bold;
-    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    padding: 6px;
-    text-align: center;
-}
+
 .img_part3{
     position: relative;
-    width: 45%;
+    width: 400px;
+    margin-bottom: 30px;
     
 
 }
@@ -229,7 +222,8 @@ body{
 
 .img_part3 img{
     
-    width: 400px;
+    width: 100%;
+    /* margin-right: 10px; */
     
 }
 .img_part3 div{
@@ -243,11 +237,12 @@ body{
     background-color: white;
     clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
     color: #7ba334;
+    font-size: 15px;
     font-weight: bold;
     text-align: center;
-    width: 60%;
-    padding: 10px 3px;
-    border-radius: 10%;
+    width: 200px;
+    padding: 10px;
+    
     
 
 
@@ -259,9 +254,9 @@ body{
   
     
 
-    background-color: rgba(255, 255, 255,.4);
+    background-color: rgba(255, 255, 255,.7);
     border-color: rgba(255, 255, 255, .4);
-    color: #a0f312;
+    color: #27a517;
     bottom: 0;
     right: 0;
 
@@ -274,8 +269,11 @@ body{
 
     
 }
-
-.up{
+.part4{
+    text-align: center;
+    margin-top: 120px;
+}
+/* .up{
     margin-left:5%;
 }
 .up h1{
@@ -290,21 +288,22 @@ body{
 }
 #l2{
     margin-left: 30%;
-}
+} */
 
 .card{
     
-    border: solid rgba(255, 255, 255,.4);
+    border: solid rgba(58, 233, 10, 0.388);
     /* position: relative; */
-    width: 200px;
+    width: 276px;   
     border-radius: 5px;
+    margin: 2px;
     
     
     
 }
 .vs{
     display: flex;
-    border-bottom:  rgba(255, 255, 255,.4);
+    border-bottom: solid rgba(58, 233, 10, 0.388);
     border-radius: 5px;
     padding: 10%;
     position: relative;
@@ -321,7 +320,7 @@ body{
 
 .live-stream{
 display: flex;
-border: solid grey;
+border: solid rgba(58, 233, 10, 0.388);
 border-radius: 52px;
 /* text-align: center; */
 align-items: center;
@@ -351,7 +350,12 @@ background-color: rgb(4,20,44);
 }
 .all-cards{
     /* display: grid; */
+    /* display: flex; */
     margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-left: 10%; */
+    justify-content: center;
     
  
     
@@ -360,28 +364,31 @@ background-color: rgb(4,20,44);
 .cd1{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10%;
+    /* margin-left: 10%; */
+    justify-content: space-around;
+    /* justify-content: center; */
     
 }
 .cd2{
     display: flex;
     flex-wrap: wrap;
-    margin-left: 10%;
+    /* margin-left: 10%/; */
+    justify-content: space-around;
     
 }
-.card{
-    margin: 1%;
-}
+
 .part6{
-    margin-left: 45%;
+    display: flex;
+    justify-content: space-around;
 }
 .p71 div{
     color: white;
     background-color: #7ba334;
     
     font-size: small;
+    font-weight: bold;
     margin-right: 10%;
-    border-radius:40%;
+    border-radius:57px;
     text-align: center;
     margin-top: 1px;
     
@@ -429,7 +436,7 @@ background-color: rgb(4,20,44);
 .ip1 input{
     
       
-    text-align: center;
+    text-align:left;
     align-items: center;
     padding: 6%;
     padding-right: 48%;
@@ -493,13 +500,62 @@ font-size: small;
 }
 .icon img{
     width: 30px;
+    height: auto;
     margin: 1%;
 
 }
 .mini1{
     display: flex;
+    flex-wrap: wrap;
 }
 .mini2{
     display: flex;
+    flex-wrap: wrap;
 }
 
+@media (max-width: 376px){
+
+ .mn{
+    flex-wrap: wrap;
+ }
+ .card{
+    width: 400px;
+    /* background-color: blue; */
+ }
+ .img_part3{
+    width: 245px;
+
+
+
+ }
+ #warzone{
+    height:auto;
+    width: 200px;
+ }
+}
+
+@media( max-width:407px ){
+    .p82{
+        margin: 1%;
+        flex-wrap:wrap ;
+    }
+    .ip1 input{
+        padding-right: 0%;
+        margin-left: -9%;
+    }
+    .btd button{
+        margin-left: -176%;
+    }
+}
+@media(min-width:359px) and (max-width:407px){
+
+
+.ip1 input{margin-left: 4%;
+    padding-right: 30%;
+
+}
+.btd button{
+    margin-left: -72%;
+}
+
+}
